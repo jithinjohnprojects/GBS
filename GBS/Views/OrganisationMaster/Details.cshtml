@@ -1,0 +1,50 @@
+﻿@model GBS.Models.OrgMaster
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrgMaster</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrgName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrgName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorpAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorpAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrgId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

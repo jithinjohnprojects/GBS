@@ -1,0 +1,51 @@
+﻿@model IEnumerable<GBS.Models.Category_Color>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.color_cod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rec_status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.color_cod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rec_status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.color_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.color_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.color_id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SMART_GBSModelStoreContainer" CdmEntityContainer="SMART_GBSEntities">
+    <EntitySetMapping Name="OrgMasters">
+      <EntityTypeMapping TypeName="SMART_GBSModel.OrgMaster">
+        <MappingFragment StoreEntitySet="OrgMaster">
+          <ScalarProperty Name="OrgId" ColumnName="OrgId" />
+          <ScalarProperty Name="OrgName" ColumnName="OrgName" />
+          <ScalarProperty Name="RegAddress" ColumnName="RegAddress" />
+          <ScalarProperty Name="CorpAddress" ColumnName="CorpAddress" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category_Color">
+      <EntityTypeMapping TypeName="SMART_GBSModel.Category_Color">
+        <MappingFragment StoreEntitySet="Category_Color">
+          <ScalarProperty Name="rec_status" ColumnName="rec_status" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="color_name" ColumnName="color_name" />
+          <ScalarProperty Name="color_cod" ColumnName="color_cod" />
+          <ScalarProperty Name="color_id" ColumnName="color_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpMasters">
+      <EntityTypeMapping TypeName="SMART_GBSModel.EmpMaster">
+        <MappingFragment StoreEntitySet="EmpMaster">
+          <ScalarProperty Name="rec_status" ColumnName="rec_status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="MaritialStatus" ColumnName="MaritialStatus" />
+          <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
+          <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="BirthPlace" ColumnName="BirthPlace" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PassportName" ColumnName="PassportName" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
